@@ -51,15 +51,15 @@ main {
 
 
 header {
-	background: #FF0040;
-	background: -webkit-linear-gradient(#F5A9BC, #FF0040);
-	background: -o-linear-gradient(#F5A9BC, #FF0040); 
-	background: -moz-linear-gradient(#F5A9BC, #FF0040);
-	background: linear-gradient(#F5A9BC, #FF0040);
+	background: #fffff;
+	/*background: -webkit-linear-gradient(#F5A9BC, #FF0040);*/
+	/*background: -o-linear-gradient(#F5A9BC, #FF0040); */
+	/*background: -moz-linear-gradient(#F5A9BC, #FF0040);*/
+	/*background: linear-gradient(#F5A9BC, #FF0040);*/
 }
 
 .title {
-	color: white;
+	color: #00cc66;
 }
 
 .main-logo {

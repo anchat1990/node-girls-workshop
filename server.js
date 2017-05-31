@@ -15,17 +15,14 @@ app.use(express.static("public"));
 
 app.use(formidable());
 app.post('/create-post', function (req, res) {
-    // console.log('Hello there!', req.fields);
+    var blogPost = req.fields.blogpost;
     fs.readFile(__dirname + '/data/posts.json', function (error, file) {
-        console.log("posts looks like", file.toString());
         var newParsedFile =  JSON.parse(file);;
         newParsedFile[Date.now().toString()] = req.fields.blogpost;
+        
         fs.writeFile(__dirname + '/data/posts.json', 
         JSON.stringify(newParsedFile, null, 4), function (error) {
-            if (!error) fs.readFile(__dirname + '/data/posts.json', 
-            function (error, file) {
-                console.log("posts now looks like", file.toString());
-            });
+            if (!error) res.send({blogpost:blogPost})
         });
     });
 });
