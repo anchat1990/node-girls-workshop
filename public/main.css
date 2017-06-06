@@ -93,11 +93,11 @@ textarea {
 }
 
 button[type="submit"] {
-	background: #A5DF00;
-	background: -webkit-linear-gradient(#93C503, #ABCC4B);
-	background: -o-linear-gradient(#93C503, #ABCC4B);
-	background: -moz-linear-gradient(#93C503, #ABCC4B);
-	background: linear-gradient(#93C503, #ABCC4B);
+	background: #4CAF50;
+	background: -webkit-linear-gradient(#4CAF50, #4CAF50);
+	background: -o-linear-gradient(#4CAF50, #4CAF50);
+	background: -moz-linear-gradient(#4CAF50, #4CAF50);
+	background: linear-gradient(#4CAF50, #4CAF50);
 	border: none;
     color: white;
     padding: 4px 25px;
