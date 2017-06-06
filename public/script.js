@@ -24,7 +24,6 @@ function ready () {
  ***/
 function postBlogposts (url, data) {
 
-    // getBlogposts('/get-posts');
     fetch(url, {
         method: 'POST',
         body: data
@@ -32,7 +31,7 @@ function postBlogposts (url, data) {
     .then(function (res) {
         res.json()
             .then(function (json) {
-                console.log(json);
+                console.log("post blog posts json looks like",json);
                 addBlogpostsToPage(json);
                 document.querySelector('form').reset();
         })
@@ -50,7 +49,7 @@ function getBlogposts (url) {
     .then(function (res) {
         res.json()
         .then(function (json) {
-            console.log(json);
+            console.log("get blog posts json",json);
             addBlogpostsToPage(json);
         });
     })
@@ -60,6 +59,7 @@ function getBlogposts (url) {
 }
 
 function addBlogpostsToPage (data) {
+    console.log("addBlogPost", data)
     for (var blogpost in data) {
         if (data.hasOwnProperty(blogpost)) {
 
