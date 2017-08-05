@@ -27,7 +27,6 @@ Open up the `index.html` file in your text editor.  If you have a look, you shou
 **Replace the greyed-out comment with this code snippet:**
 
 ```html
-<h3>Create a blog post</h3>
 <form action="/create-post" method="POST">
     <textarea name="blogpost" rows="10" cols="14"></textarea>
     <button type="submit">Send</button>
@@ -99,7 +98,7 @@ You should now see an object in the console.  The key should be `blogpost`, just
 ---
 | Keyword | Explanation |
 |--------|:-------------------------------:|
-| `GET` | An HTTP method for fetching data. Read more [here](http://www.w3schools.com/tags/ref_httpmethods.asp). |
-| `POST` | An HTTP method for sending data. Read more [here](http://www.w3schools.com/tags/ref_httpmethods.asp). |
+| `GET` | An HTTP method for fetching data. Read more [here](http://www.w3schools.com/tags/ref_httpmethods.asp). For more detailed docs [read this](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) |
+| `POST` | An HTTP method for sending data. Read more [here](http://www.w3schools.com/tags/ref_httpmethods.asp). For more detailed docs [read this](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)|
 | `middleware` | Functions in Express that run before the final request handler.  A nice article explains in more depth [here](https://www.safaribooksonline.com/blog/2014/03/10/express-js-middleware-demystified) |
 | `express-formidable` | An Express middleware function that parses (reads) form and file data from the request.  Documentation on it [here](https://www.npmjs.com/package/express-formidable)|
